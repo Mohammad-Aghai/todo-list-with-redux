@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    margin: 20px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 30px;
+}
+button{
+    margin: 5px;
+}
+.btnBox{
+display: flex;
+flex-flow: row nowrap;
+gap: 10px;
+width: 100%;
+justify-content: center;
+margin-bottom: 20px;
+}
+.btn{
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+align-items: center;
+padding: 10px 15px;
+background-color: transparent;
+cursor: pointer;
+font-size: 30px;
+border: none;
+}
+.todoList{
+display: flex;
+flex-flow: column wrap;
+gap: 1px;
+}
+.btn{
+text-align: center;
+background-color: rgba(0, 213, 255, 0.575);
+color: #ffff;
+}
+
+.todo {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    max-width: 400px; 
+    margin: 10px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffff;
+    text-align: center;
+    overflow: hidden; 
+}
+.inputActions{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+    margin: 10px;
+}
+select{
+    padding: 10px;
+}
+.input__box{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.mainInput{
+    outline: none;
+    padding: 10px;
+    border: none;
+    background-color: #008d7133;
+    border-radius:15px;
+    transition: all 0.3s;
+    font-size: 35px;
+}
+.selector{
+    background-color: #008d7133;
+    border-radius:15px;
+    border: none;
+    margin-left: 10px;
+    font-size: 20px;
+    outline: none;
+    transition: all 0.3s;
+}
+.mainInput:focus{
+    background-color: #02cfcfb7;
+}
+.selector:focus{
+    background-color: #02cfcfb7;
+}
+.completeTodo{
+    opacity: 0.3;
+}
+.btn{
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.addNewTodo{
+    background-color: #00d700be;
+}
+.addNewTodo:hover{
+    background-color: #02ff02fe;
+}
+.clear{
+    background-color: #cf2b02b7;
+}
+.clear:hover{
+    background-color: #ff3300;
+}
+.btn_status{
+    background-color: #ff7b00;
+}
+.btn_delete{
+    background-color: #b1ba01;
+} 
+.todoText {
+    word-break: break-word; 
+    overflow-wrap: break-word; 
+    margin-bottom: 10px;
+    text-align: center; 
+    
+}
+@media screen and (max-width : 600px){
+    .mainInput{
+        font-size: 18px !important;
+    }
+    .btn{
+font-size: 20px;
+    }
+}
+@media screen and (max-width : 450px){
+    .mainInput{
+        font-size: 14px !important;
+    }
+    .btn{
+       font-size: 16px; 
+    }
+}
+@media screen and (max-width : 450px){
+    .input__box{
+        font-size: 12px !important;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+       font-size: 12px; 
+    }
+}
+@media screen and (max-width : 330px){
+    .input__box{
+        font-size: 7px !important;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .selector{
+        font-size: 12px;
+    }
+}
