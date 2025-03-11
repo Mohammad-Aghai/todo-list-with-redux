@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="inputBox">
+        <div class="input__box">
+            <input type="text" class="mainInput" placeholder="enter your todo name">
+            <select name="" id="" class="selector">
+                <option value="All">All</option>
+                <option value="Completed">Completed</option>
+                <option value="Active">Active</option>
+            </select>
+        </div>
+        <div class="inputActions">
+            <button class="btn addNewTodo">AddTodo</button>
+            <button class="btn clear">clearAll</button>
+        </div>
+    </div>
+    <br>
+    <h2>Todo List</h2>
+    <div class="todoList"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.js"
+        integrity="sha512-Olr8rkMYuxq3KpAPjYA/mAVYe7EIEP4RkhoAvD/qOrlauzE4CTvpQSg/cRX0/5Qreret4aobD0vg1xtjBqR7VA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
